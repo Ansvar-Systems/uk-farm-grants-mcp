@@ -2,12 +2,12 @@
 
 ## What Is Included
 
-- **FETF 2026** -- Productivity (48 items), Slurry (19 items), and Animal Health (28 items) themes with eligible items, grant values, specifications, and scoring
+- **FETF 2026** -- Productivity (123 items), Slurry (35 items), and Animal Health (140 items) themes with eligible items, grant values, specifications, and scoring. Includes all official RPA-published items from GOV.UK Annex 3 and Annex 4.
 - **Farming Transformation Fund Capital Grants** -- 14 large-scale capital investment grants with match-funding requirements (slurry stores, buildings, grain stores, AD plants)
 - **England Woodland Creation Offer (EWCO)** -- 17 options: per-hectare creation payments, maintenance, infrastructure (fencing, gates, tree guards), nature recovery, flood risk, water quality, natural colonisation
 - **Countryside Stewardship Higher Tier** -- 23 revenue payment options for environmental management (grassland, moorland, woodland, coastal, pollinators, birds, wetland)
 - **Tree Health Pilot** -- Grants for managing diseased woodland
-- **8 grant schemes, 149 eligible items, 23 stacking rules**
+- **8 grant schemes, 352 eligible items, 23 stacking rules**
 - **Stacking rules** -- Which grants can and cannot be combined, with conditions
 - **Application guidance** -- Step-by-step process for each grant with evidence requirements and portal links
 - **Deadline tracking** -- Open, upcoming, and rolling grant windows with days remaining

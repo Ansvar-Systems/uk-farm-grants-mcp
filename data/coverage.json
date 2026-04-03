@@ -3,9 +3,9 @@
   "jurisdiction": "GB",
   "build_date": "2026-04-03",
   "grants": 8,
-  "grant_items": 149,
+  "grant_items": 352,
   "stacking_rules": 23,
   "application_guidance_steps": 28,
-  "fts_entries": 157,
-  "source_hash": "7c35023d990902a5"
+  "fts_entries": 360,
+  "source_hash": "3b0df94645081dd0"
 }
