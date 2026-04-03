@@ -1,0 +1,80 @@
+schema_version: "1.0"
+mcp_name: "UK Farm Grants MCP"
+category: "domain_intelligence"
+
+sources:
+  - name: "DEFRA Farming and Countryside Programme"
+    authority: "Department for Environment, Food and Rural Affairs"
+    official_url: "https://www.gov.uk/guidance/funding-for-farmers"
+    api_url: null
+    retrieval_method: "MANUAL_EXTRACTION"
+    format: "HTML"
+    authentication: "none"
+    update_frequency: "per grant round"
+    license:
+      type: "Open Government Licence"
+      url: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      summary: "Free to copy, publish, distribute, and adapt with attribution"
+    coverage:
+      scope: "Grant schemes, eligibility criteria, payment rates, deadlines"
+      version: "2026 round"
+      item_count: "8 grant schemes"
+    languages:
+      - "en"
+
+  - name: "RPA FETF Grant Guidance"
+    authority: "Rural Payments Agency"
+    official_url: "https://www.gov.uk/government/collections/farming-equipment-and-technology-fund"
+    api_url: null
+    retrieval_method: "MANUAL_EXTRACTION"
+    format: "HTML"
+    authentication: "none"
+    update_frequency: "per FETF round"
+    license:
+      type: "Open Government Licence"
+      url: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      summary: "Free to copy, publish, distribute, and adapt with attribution"
+    coverage:
+      scope: "FETF eligible items, specifications, grant values, scoring criteria"
+      version: "FETF 2026"
+      item_count: "18 FETF items across 3 themes"
+    languages:
+      - "en"
+
+  - name: "Forestry Commission EWCO"
+    authority: "Forestry Commission"
+    official_url: "https://www.gov.uk/guidance/england-woodland-creation-offer"
+    api_url: null
+    retrieval_method: "MANUAL_EXTRACTION"
+    format: "HTML"
+    authentication: "none"
+    update_frequency: "annual"
+    license:
+      type: "Open Government Licence"
+      url: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      summary: "Free to copy, publish, distribute, and adapt with attribution"
+    coverage:
+      scope: "Woodland creation payment rates, maintenance payments, eligibility"
+      version: "current"
+      item_count: "5 payment types"
+    languages:
+      - "en"
+
+  - name: "Natural England Countryside Stewardship"
+    authority: "Natural England"
+    official_url: "https://www.gov.uk/government/collections/countryside-stewardship"
+    api_url: null
+    retrieval_method: "MANUAL_EXTRACTION"
+    format: "HTML"
+    authentication: "none"
+    update_frequency: "annual"
+    license:
+      type: "Open Government Licence"
+      url: "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/"
+      summary: "Free to copy, publish, distribute, and adapt with attribution"
+    coverage:
+      scope: "CS Higher Tier options, payment rates, eligibility criteria"
+      version: "2026"
+      item_count: "Higher Tier scheme"
+    languages:
+      - "en"

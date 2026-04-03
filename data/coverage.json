@@ -1,0 +1,11 @@
+{
+  "mcp_name": "UK Farm Grants MCP",
+  "jurisdiction": "GB",
+  "build_date": "2026-04-03",
+  "grants": 8,
+  "grant_items": 26,
+  "stacking_rules": 9,
+  "application_guidance_steps": 28,
+  "fts_entries": 34,
+  "source_hash": "3938f987117bff8d"
+}
