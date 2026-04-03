@@ -1,27 +1,16 @@
 {
-  "name": "uk-farm-grants-mcp",
-  "display_name": "UK Farm Grants MCP",
-  "description": "UK farm grants via MCP — FETF, Capital Grants, EWCO, deadlines, eligible items, stacking rules",
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.Ansvar-Systems/uk-farm-grants",
+  "description": "UK farm grants \u2014 FETF items, Capital Grants, deadlines, stacking rules",
+  "repository": {
+    "url": "https://github.com/Ansvar-Systems/uk-farm-grants-mcp",
+    "source": "github"
+  },
   "version": "0.1.0",
-  "jurisdiction": "GB",
-  "category": "agriculture",
-  "tools_count": 10,
-  "transport": ["stdio", "streamable-http"],
-  "endpoints": {
-    "npm": "@ansvar/uk-farm-grants-mcp",
-    "docker": "ghcr.io/ansvar-systems/uk-farm-grants-mcp:latest",
-    "remote": "https://mcp.ansvar.eu/uk-farm-grants/mcp"
-  },
-  "data_sources": [
-    "DEFRA Farming and Countryside Programme",
-    "RPA FETF Grant Guidance",
-    "Forestry Commission EWCO",
-    "Natural England Countryside Stewardship"
-  ],
-  "license": {
-    "code": "Apache-2.0",
-    "data": "Open Government Licence v3"
-  },
-  "homepage": "https://ansvar.eu/open-agriculture",
-  "repository": "https://github.com/Ansvar-Systems/uk-farm-grants-mcp"
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.ansvar.eu/uk-farm-grants/mcp"
+    }
+  ]
 }
