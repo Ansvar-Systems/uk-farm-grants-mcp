@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -118,5 +119,12 @@ export function handleEstimateGrantValue(db: Database, args: EstimateArgs) {
       ? `Total exceeds the grant cap of ${grant.max_grant_value}. Grant value has been capped.`
       : undefined,
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `UK Grant Value: ${grant.name}`,
+      `Estimated grant value for ${grant.name} (${jv.jurisdiction})`,
+      'estimate_grant_value',
+      { grant_id: args.grant_id },
+      'https://www.gov.uk/guidance/funding-for-farmers',
+    ),
   };
 }

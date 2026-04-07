@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -86,5 +87,12 @@ export function handleCheckDeadlines(db: Database, args: DeadlineArgs) {
     grants_with_deadlines: deadlines.length,
     deadlines,
     _meta: buildMeta(),
+    _citation: buildCitation(
+      'UK Farm Grant Deadlines',
+      `Active grant deadlines (${jv.jurisdiction})`,
+      'check_deadlines',
+      { ...(args.grant_type ? { grant_type: args.grant_type } : {}) },
+      'https://www.gov.uk/guidance/funding-for-farmers',
+    ),
   };
 }

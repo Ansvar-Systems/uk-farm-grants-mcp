@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -49,5 +50,12 @@ export function handleGetApplicationProcess(db: Database, args: ApplicationProce
       portal: s.portal,
     })),
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `UK Grant Application: ${grant.name}`,
+      `Application process for ${grant.name} (${jv.jurisdiction})`,
+      'get_application_process',
+      { grant_id: args.grant_id },
+      'https://www.gov.uk/guidance/funding-for-farmers',
+    ),
   };
 }
