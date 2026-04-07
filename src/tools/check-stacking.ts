@@ -1,4 +1,5 @@
 import { buildMeta } from '../metadata.js';
+import { buildCitation } from '../citation.js';
 import { validateJurisdiction } from '../jurisdiction.js';
 import type { Database } from '../db.js';
 
@@ -93,5 +94,12 @@ export function handleCheckStacking(db: Database, args: StackingArgs) {
     results: pairs,
     note: 'Stacking rules are based on published DEFRA guidance and may change between grant rounds. Verify with RPA before applying.',
     _meta: buildMeta(),
+    _citation: buildCitation(
+      `UK Grant Stacking: ${validGrants.join(' + ')}`,
+      `Grant stacking compatibility check (${jv.jurisdiction})`,
+      'check_stacking',
+      { grant_ids: validGrants.join(',') },
+      'https://www.gov.uk/guidance/funding-for-farmers',
+    ),
   };
 }
