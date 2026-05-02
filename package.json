@@ -1,7 +1,7 @@
 {
   "name": "@ansvar/uk-farm-grants-mcp",
   "version": "0.1.0",
-  "description": "UK farm grants via MCP — FETF, Capital Grants, EWCO, deadlines, eligible items, stacking rules",
+  "description": "UK farm grants via MCP \u2014 FETF, Capital Grants, EWCO, deadlines, eligible items, stacking rules",
   "type": "module",
   "main": "dist/server.js",
   "bin": {
@@ -21,7 +21,15 @@
     "freshness:check": "tsx scripts/check-freshness.ts",
     "coverage:update": "tsx scripts/update-coverage.ts"
   },
-  "keywords": ["mcp", "grants", "fetf", "farming", "capital-grants", "woodland", "defra"],
+  "keywords": [
+    "mcp",
+    "grants",
+    "fetf",
+    "farming",
+    "capital-grants",
+    "woodland",
+    "defra"
+  ],
   "author": "Ansvar Systems <info@ansvar.eu>",
   "license": "Apache-2.0",
   "repository": {
@@ -46,5 +54,8 @@
     "tsx": "^4.0.0",
     "typescript": "^5.5.0",
     "vitest": "^2.0.0"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
