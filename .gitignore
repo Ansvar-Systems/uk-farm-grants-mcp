@@ -5,3 +5,11 @@ dist/
 .env
 .env.local
 coverage/
+
+# Pre-built data files removed per ADR-029 (source-only repositioning)
+database.db
+data/database.db
+*.db
+*.db-shm
+*.sqlite
+*.sqlite3
